@@ -1,0 +1,15 @@
+iso,canonical,english,full,category,use
+RUS,Россия,Russia,"Russian Federation",mainland,1
+EST,Эстония,Estonia,"Republic of Estonia",eastern,0
+ALB,Албания,Albania,"Republic of Albania",eastern,0
+KAZ,Казахстан,Kazakhstan,"Republic of Kazakhstan",siberia,1
+ARM,Армения,Armenia,"Republic of Armenia",eastern,0
+POL,Польша,Poland,"Republic of Poland",warsaw,1
+DEU,Германия,Germany,"Federal Republic of Germany",extended,1
+LVA,Латвия,Latvia,"Republic of Latvia",eastern,1
+LTU,Литва,Lithuania,"Republic of Lithuania",eastern,0
+UKR,Украина,Ukraine,"Ukraine",eastern,1
+BLR,Беларусь,Belarus,"Republic of Belarus",eastern,0
+MDA,Молдова,Moldova,"Republic of Moldova",eastern,0
+AZE,Азербайджан,Azerbaijan,"Republic of Azerbaijan",siberia,0
+GEO,Грузия,Georgia,"Georgia",siberia,0

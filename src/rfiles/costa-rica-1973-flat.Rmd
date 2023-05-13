@@ -1,0 +1,31 @@
+```{r, setup, include=FALSE}
+wd <- "/Volumes/cs-projects/sosc-demographics-ii/src/common/costa-rica-1973-flat/"
+knitr::opts_knit$set(root.dir = wd)
+```
+
+```{r}
+if (!require("ipumsr")) {
+  install.packages("ipumsr")
+}
+if (!require("tidyverse")) {
+ install.packages("tidyverse") 
+} 
+
+library(dplyr)
+
+ddi <- read_ipums_ddi("ipumsi_00020.xml")
+data <- read_ipums_micro(ddi)
+```
+
+```{r}
+data %>% head
+```
+```{r}
+data %>% 
+  group_by(AGE, SEX) %>% 
+  summarise(count = n())  %>% filter(AGE<100) %>% 
+  ggplot(aes(x = AGE, y = ifelse(SEX==1,count,-count),
+             fill = as.factor(SEX)))+
+  geom_bar(stat = "identity")+
+  coord_flip()
+```
